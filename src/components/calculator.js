@@ -1,6 +1,6 @@
-import Input from './input';
-import Sign from './sign';
-import Egal from './egal';
+import Input from './Input';
+import Sign from './Sign';
+import Egal from './Egal';
 
 const Calculator = () => (
   <div className="calc">
