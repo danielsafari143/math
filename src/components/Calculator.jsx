@@ -22,9 +22,21 @@ function Calculator() {
 
   const handleEqual = (e) => {
     setCalc(() => ({ ...calc, obj, buttonName: e.target.value }));
-    if (calc.obj !== undefined) {
-      const num = calculate(calc.obj, calc.buttonName);
-      setBtn(num.total);
+    if (e.target.value === '=') {
+      if (calc.obj !== undefined) {
+        const num = calculate(calc.obj, calc.buttonName);
+        setBtn(num.total);
+        setCalc({});
+      }
+    } else if (e.target.value === '+/-') {
+      if (calc.obj !== undefined) {
+        const num = calculate(calc.obj, calc.buttonName);
+        setBtn(num.next);
+        setCalc({});
+      }
+    } else {
+      setBtn('');
+      setObj({});
       setCalc({});
     }
   };
@@ -36,14 +48,14 @@ function Calculator() {
   return (
     <div className="calc">
       <input value={btn} onChange={handleInput} className="inpute" />
-      <input type="button" onClick={handleSigns} className="signs gray" value="A/C" />
-      <input type="button" onClick={handleSigns} className="signs gray" value="+/-" />
+      <input type="button" onClick={handleEqual} className="signs gray" value="A/C" />
+      <input type="button" onClick={handleEqual} className="signs gray" value="+/-" />
       <input type="button" onClick={handleSigns} className="signs gray" value="%" />
       <input type="button" onClick={handleSigns} className="signs orange" value="÷" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="7" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="8" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="9" />
-      <input type="button" onClick={handleSigns} className="signs orange" value="*" />
+      <input type="button" onClick={handleSigns} className="signs orange" value="x" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="4" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="5" />
       <input type="button" onClick={handleButtonClick} className="signs gray" value="6" />
