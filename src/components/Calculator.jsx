@@ -1,30 +1,62 @@
-import Input from './Input';
-import Sign from './Sign';
-import Egal from './Egal';
+import { useState } from 'react';
+import calculate from './logic/calculate';
 
-const Calculator = () => (
-  <div className="calc">
-    <Input />
-    <Sign color="gray" symbole="A/C" />
-    <Sign color="gray" symbole="+/-" />
-    <Sign color="gray" symbole="%" />
-    <Sign color="orange" symbole="÷" />
-    <Sign color="gray" symbole={7} />
-    <Sign color="gray" symbole={8} />
-    <Sign color="gray" symbole={9} />
-    <Sign color="orange" symbole="×" />
-    <Sign color="gray" symbole={4} />
-    <Sign color="gray" symbole={5} />
-    <Sign color="gray" symbole={6} />
-    <Sign color="orange" symbole="-" />
-    <Sign color="gray" symbole={1} />
-    <Sign color="gray" symbole={2} />
-    <Sign color="gray" symbole={3} />
-    <Sign color="orange" symbole="+" />
-    <Egal color="gray" symbole={0} />
-    <Sign color="gray" symbole="." />
-    <Sign color="orange" symbole="=" />
-  </div>
-);
+function Calculator() {
+  const [btn, setBtn] = useState('');
+  const [obj, setObj] = useState({});
+  const [calc, setCalc] = useState({});
+
+  const handleButtonClick = (e) => {
+    let valeur = '';
+    setBtn((p) => {
+      valeur = p + e.target.value;
+      setObj({ ...obj, next: parseInt(valeur, 10) });
+      return valeur;
+    });
+  };
+
+  const handleSigns = (e) => {
+    setObj({ ...obj, total: parseInt(btn, 10), operation: e.target.value });
+    setBtn('');
+  };
+
+  const handleEqual = (e) => {
+    setCalc(() => ({ ...calc, obj, buttonName: e.target.value }));
+    if (calc.obj !== undefined) {
+      const num = calculate(calc.obj, calc.buttonName);
+      setBtn(num.total);
+      setCalc({});
+    }
+  };
+
+  const handleInput = (e) => {
+    setBtn(e.target.value);
+  };
+
+  return (
+    <div className="calc">
+      <input value={btn} onChange={handleInput} className="inpute" />
+      <input type="button" onClick={handleSigns} className="signs gray" value="A/C" />
+      <input type="button" onClick={handleSigns} className="signs gray" value="+/-" />
+      <input type="button" onClick={handleSigns} className="signs gray" value="%" />
+      <input type="button" onClick={handleSigns} className="signs orange" value="÷" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="7" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="8" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="9" />
+      <input type="button" onClick={handleSigns} className="signs orange" value="*" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="4" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="5" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="6" />
+      <input type="button" onClick={handleSigns} className="signs orange" value="-" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="1" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="2" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="3" />
+      <input type="button" onClick={handleSigns} className="signs orange" value="+" />
+      <input type="button" onClick={handleButtonClick} className="egals gray" value="0" />
+      <input type="button" onClick={handleButtonClick} className="signs gray" value="." />
+      <input type="button" onClick={handleEqual} className="signs orange" value="=" />
+    </div>
+  );
+}
 
 export default Calculator;
