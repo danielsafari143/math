@@ -63,3 +63,15 @@ code {
   background-color: rgb(219, 218, 218);
   border: none;
 }
+
+.calculate {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote{
+  width: 30vw;
+}
