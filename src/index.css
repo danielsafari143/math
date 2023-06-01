@@ -74,4 +74,10 @@ code {
 
 .quote {
   width: 30vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.error {
+  color: rgb(235, 36, 36);
+  font-weight: 600;
 }
