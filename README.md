@@ -1,38 +1,5 @@
 <a name="readme-top"></a>
 
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-
-  <h3><b>Math Magicians</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -41,7 +8,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,49 +26,44 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 Todo List <a name="about-project"></a>
 
-this application is used to perform besics calculations in Javascript with React library
+**Todo List** This todo list helps to organize your day
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With <a name="built-with"> </a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-
 <details>
-  <summary>HTML</summary>
-  
+  <summary>Html</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
 </details>
 
 <details>
-  <summary>CSS</summary>
-
-</details>
-
-<details>
-<summary>Git&Github</summary>
- 
+  <summary>Css</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
 </details>
 
 <details>
 <summary>Javascript</summary>
-</details>
-
-<details>
-<summary>React</summary>
-</details>
-
-<details>
-<summary>Webpack</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
 </details>
 
 <!-- Features -->
 
-
 ### Key Features <a name="key-features"></a>
 
-- Set up 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **[Display tasks]**
+- **[Add a task]**
+- **[Remove a task]**
+- **[Edit a task]**
+- **[Remove all selected tasks]**
 
 <!-- GETTING STARTED -->
 
@@ -113,52 +75,47 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-`npm install`
+A working connection and a coding editor like visual studio code
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+- git clone https://github.com/danielsafari143/todo-list.git
 
-```cd my-folder```
-
-
-```git clone https://github.com/danielsafari143/math.git```
-
+Use git push at your desired location and use the command git clone and paste the URL
 
 ### Install
 
 Install this project with:
 
-`cd my-project`
-
-
-`npm install`
-
+- cd todo-list
+- npm install
 
 ### Usage
 
 To run the project, execute the following command:
 
-`live server`
-
-`npm start`
+- npm run start
 
 ### Run tests
 
 To run tests, run the following command:
 
-`npm run test`
-
-`npm install --save-dev hint@7.x`
-
-`npx stylelint "**/*.{css,scss}"`
+- cd src
+- npm run test
 
 ### Deployment
 
 You can deploy this project using:
 
-`github pages`
+<!--
+Example:
+
+```sh
+
+```
+ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,12 +123,9 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Safari Hamuli**
+👤 ** Safari Hamuli **
 
-- GitHub: [@githubhandle](https://github.com/danielsafari143)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/safari-daniel-a01744251/)
-- GitHub: [@githubhandle](https://github.com/danielsafari143)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/safari-daniel-a01744251/)
+- GitHub: [@danielsafari143 ](https://github.com/danielsafari143)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,9 +133,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-
-- [ ] **[Set up react app]**
- [ ] **[Components ]**
+- **[Add a second page file ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,8 +151,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-Most of us are pretty good at judging whether a project is relevant for us. We might not be the master of it but we might recognize that we’ve done something similar before and feel confident that we can pick it up and help.If you can’t find anything you think you are good at, consider looking at different projects that require less technical skill.If relevant for the project, you can also prepare some samples specific to the project to impress the client.The trick is to prepare some that are slightly different or watermarked, so they can’t use them in the project but close enough that they can see the potential If you like this project, kindly give it a star..
+If you like this project...you can visit us at GitHub: [@kerlos bahaa](https://github.com/kerlos-bahaa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,15 +159,19 @@ Most of us are pretty good at judging whether a project is relevant for us. We m
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+I would like to thank...
 
-I would like to thank my colleague and Microverse for the opportunity
+- To coding partner GitHub: [@danielsafari143 ](https://github.com/danielsafari143)
+
+- Creative Commons license of the design
+- I would like to thanks all my coding partners at Microverse
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
