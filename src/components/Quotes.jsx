@@ -26,13 +26,13 @@ const Quotes = () => {
   }, [setQuotes]);
 
   if (loading === true) {
-    return <p className="quote">Loading...</p>;
+    return <div className="calculate"><p className="quote">Loading...</p></div>;
   }
 
   if (error !== true) {
-    return <p className="quote">{quotes}</p>;
+    return <div className="calculate"><p className="quote">{quotes}</p></div>;
   }
-  return <p className="quote error">An error occurred while processing your request</p>;
+  return <div className="calculate"><p className="quote error">An error occurred while processing your request</p></div>;
 };
 
 export default Quotes;

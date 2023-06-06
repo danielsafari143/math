@@ -50,27 +50,30 @@ function Calculator() {
   };
 
   return (
-    <div className="calc">
-      <input value={btn} onChange={handleInput} className="inpute" />
-      <Sign func={handleEqual} color="gray" symbole="A/C" />
-      <Sign func={handleEqual} color="gray" symbole="+/-" />
-      <Sign func={handleSigns} color="gray" symbole="%" />
-      <Sign func={handleSigns} color="orange" symbole="÷" />
-      <Sign func={handleButtonClick} color="gray" symbole="7" />
-      <Sign func={handleButtonClick} color="gray" symbole="8" />
-      <Sign func={handleButtonClick} color="gray" symbole="9" />
-      <Sign func={handleSigns} color="orange" symbole="x" />
-      <Sign func={handleButtonClick} color="gray" symbole="4" />
-      <Sign func={handleButtonClick} color="gray" symbole="5" />
-      <Sign func={handleButtonClick} color="gray" symbole="6" />
-      <Sign func={handleSigns} color="signs orange" symbole="-" />
-      <Sign func={handleButtonClick} color="gray" symbole="1" />
-      <Sign func={handleButtonClick} color="gray" symbole="2" />
-      <Sign func={handleButtonClick} color="gray" symbole="3" />
-      <Sign func={handleSigns} color="orange" symbole="+" />
-      <Sign func={handleButtonClick} color="egals gray" symbole="0" />
-      <Sign func={handleButtonClick} color="gray" symbole="." />
-      <Sign func={handleEqual} color="orange" symbole="=" />
+    <div className="calculate">
+      <h1>{'Let\'s do some math!'}</h1>
+      <div className="calc">
+        <input value={btn} onChange={handleInput} className="inpute" />
+        <Sign func={handleEqual} color="gray" symbole="A/C" />
+        <Sign func={handleEqual} color="gray" symbole="+/-" />
+        <Sign func={handleSigns} color="gray" symbole="%" />
+        <Sign func={handleSigns} color="orange" symbole="÷" />
+        <Sign func={handleButtonClick} color="gray" symbole="7" />
+        <Sign func={handleButtonClick} color="gray" symbole="8" />
+        <Sign func={handleButtonClick} color="gray" symbole="9" />
+        <Sign func={handleSigns} color="orange" symbole="x" />
+        <Sign func={handleButtonClick} color="gray" symbole="4" />
+        <Sign func={handleButtonClick} color="gray" symbole="5" />
+        <Sign func={handleButtonClick} color="gray" symbole="6" />
+        <Sign func={handleSigns} color="signs orange" symbole="-" />
+        <Sign func={handleButtonClick} color="gray" symbole="1" />
+        <Sign func={handleButtonClick} color="gray" symbole="2" />
+        <Sign func={handleButtonClick} color="gray" symbole="3" />
+        <Sign func={handleSigns} color="orange" symbole="+" />
+        <Sign func={handleButtonClick} color="egals gray" symbole="0" />
+        <Sign func={handleButtonClick} color="gray" symbole="." />
+        <Sign func={handleEqual} color="orange" symbole="=" />
+      </div>
     </div>
   );
 }
