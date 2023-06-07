@@ -100,7 +100,10 @@ this application is used to perform besics calculations in Javascript with React
 
 ### Key Features <a name="key-features"></a>
 
-- Set up 
+- I added the functionality for this app👍.
+- I used the react-router-dom to navigate into the routes of the app💯.
+- I used the basic css style for styling the components.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
