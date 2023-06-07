@@ -1,6 +1,6 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import calculate from '../components/logic/calculate';
-import React from 'react'
-import { render, screen , fireEvent} from '@testing-library/react'
 import Sign from '../components/Sign';
 
 beforeAll(() => {
@@ -8,6 +8,19 @@ beforeAll(() => {
 });
 
 describe('Test Calculate addition', () => {
+  const setState = jest.fn();
+  const useState = jest.spyOn(React, 'useState');
+  useState.mockImplementation((init) => [init, setState]);
+
+  const [setBtn] = useState('');
+  const [setObj] = useState({});
+
+  const obj = {
+    total: 10,
+    next: 2,
+    operation: '÷',
+  };
+
   const handleButtonClick = jest.fn((e) => () => {
     let valeur = '';
     setBtn((p) => {
@@ -20,14 +33,9 @@ describe('Test Calculate addition', () => {
     });
   });
 
-  const obj = {
-    total: 4,
-    next: 1,
-    operation: '+',
-  };
   const calc = calculate(obj, '=');
   it('test for addition', () => {
-    render(<Sign  symbole={2} color="gray" func={handleButtonClick} />);
+    render(<Sign symbole={2} color="gray" func={handleButtonClick} />);
     const equalButton = screen.getByRole('button');
     fireEvent.click(equalButton);
     expect(calc.total).toBe('5');
@@ -35,6 +43,19 @@ describe('Test Calculate addition', () => {
 });
 
 describe('Test Calculate multiply', () => {
+  const setState = jest.fn();
+  const useState = jest.spyOn(React, 'useState');
+  useState.mockImplementation((init) => [init, setState]);
+
+  const [setBtn] = useState('');
+  const [setObj] = useState({});
+
+  const obj = {
+    total: 6,
+    next: 2,
+    operation: 'x',
+  };
+
   const handleButtonClick = jest.fn((e) => () => {
     let valeur = '';
     setBtn((p) => {
@@ -46,15 +67,10 @@ describe('Test Calculate multiply', () => {
       return valeur;
     });
   });
-  
-  const obj = {
-    total: 6,
-    next: 2,
-    operation: 'x',
-  };
+
   const calc = calculate(obj, '=');
   it('test for division', () => {
-    render(<Sign  symbole={2} color="gray" func={handleButtonClick} />);
+    render(<Sign symbole={2} color="gray" func={handleButtonClick} />);
     const equalButton = screen.getByRole('button');
     fireEvent.click(equalButton);
     expect(calc.total).toBe('12');
