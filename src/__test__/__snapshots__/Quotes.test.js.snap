@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Confirming display of quote quote displays 1`] = `
+<div
+  className="calculate"
+>
+  <p
+    className="quote"
+  >
+    Loading...
+  </p>
+</div>
+`;
