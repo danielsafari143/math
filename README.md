@@ -103,6 +103,9 @@ this application is used to perform besics calculations in Javascript with React
 - I added the functionality for this app👍.
 - I used the react-router-dom to navigate into the routes of the app💯.
 - I used the basic css style for styling the components.
+- Add some animation for the project💯
+- Enhance the code 🟠
+- Add chatbot for the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,7 +206,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-Most of us are pretty good at judging whether a project is relevant for us. We might not be the master of it but we might recognize that we’ve done something similar before and feel confident that we can pick it up and help.If you can’t find anything you think you are good at, consider looking at different projects that require less technical skill.If relevant for the project, you can also prepare some samples specific to the project to impress the client.The trick is to prepare some that are slightly different or watermarked, so they can’t use them in the project but close enough that they can see the potential If you like this project, kindly give it a star..
+If you like this project you can give me a star 😊 just to prove my app that it is useful for everyone and the users can use it to calculate any thing 💯.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
