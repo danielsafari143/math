@@ -103,9 +103,6 @@ this application is used to perform besics calculations in Javascript with React
 - I added the functionality for this app👍.
 - I used the react-router-dom to navigate into the routes of the app💯.
 - I used the basic css style for styling the components.
-- Add some animation for the project💯
-- Enhance the code 🟠
-- Add chatbot for the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,6 +182,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Add some animation for the project💯
+- Enhance the code 🟠
+- Add chatbot for the project
 
 - [ ] **[Set up react app]**
  [ ] **[Components ]**
