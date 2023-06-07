@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test if the UI matches  1`] = `
+exports[`button Test if the UI matches  1`] = `
 <input
   className="signs gray"
   onClick={[Function]}
